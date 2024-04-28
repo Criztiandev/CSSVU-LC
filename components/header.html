@@ -1,23 +1,37 @@
-<header class="navbar bg-primary text-white flex justify-between items-center">
-  <div class="flex gap-4">
+<header
+  class="navbar bg-primary text-white flex justify-between items-center flex-col lg:flex-row lg:items-start">
+  <div class="flex flex-col gap-4 text-center lg:flex-row">
     <!-- Logos -->
-    <div class="size-[64px]">
+    <div class="size-[150px] lg:size-[100px]">
       <img class="object-cover" src="assets/images/logo.png" alt="CSVU-Logo" />
     </div>
 
     <div class="flex flex-col">
-      <span class="text-white text-sm font-bold">
+      <span class="text-white text-sm font-bold mb-4">
         CAVITE STATE UNIVERSITY - TRECE MARTIRES CITY CAMPUS
       </span>
-      <span class="text-white text-sm font-medium">
+      <span class="text-white text-[12px] font-medium">
         INTERNALIZATION LINKAGE AND COLLABORATION
       </span>
     </div>
   </div>
 
   <!-- Navigation -->
+  <button class="btn btn-square btn-ghost absolute top-0 m-4 left-0 md:hidden">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      class="inline-block w-[32px] h-[32px] stroke-current">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </button>
   <nav class="flex-none">
-    <ul class="menu menu-horizontal text-base font-bold">
+    <ul class="menu menu-horizontal text-base flex justify-center mt-4">
       <li><a>Home</a></li>
       <li><a>About</a></li>
       <li><a>Partnerships</a></li>
@@ -26,7 +40,7 @@
         <div tabindex="0" role="button" class="">Login</div>
         <ul
           tabindex="0"
-          class="dropdown-content w-[200px] z-[1] menu p-2 bg-[#137308] rounded-[5px] mt-5">
+          class="dropdown-content z-[1] menu p-2 bg-[#137308] rounded-[5px] mt-5">
           <li><a>Students</a></li>
           <li><a>External partners</a></li>
           <li><a>Admin</a></li>
